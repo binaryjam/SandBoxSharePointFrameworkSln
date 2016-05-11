@@ -6,7 +6,7 @@ var destination = "";
 
 gulp.task('build', ['buildlocal','buildSP']);
 
-gulp.task('buildlocal', ['buildhtmllocal','buildcssboth','buildjsboth']);
+gulp.task('buildlocal', ['buildhtmllocal','buildcssboth','buildjsboth','buildimgboth']);
 //Depends on build local to call the build css/js both save running twice
 // this can be made faster, tasks that return as stream (and other things) can
 //be ran async, i had trouble ensuring packagesp ran last so removed that for now
@@ -49,6 +49,13 @@ gulp.task('buildjsboth', function () {
 //      Add some uglifier here if you want
         .pipe(gulp.dest('./WebComponents/buildlocal/SBFrameWork/SandboxFrameworkPart'))
         .pipe(gulp.dest('./WebComponents/buildSP'));
+});
+
+gulp.task('buildimgboth', function () {
+     gulp.src(['./WebComponents/src/images/*.*'])
+        .pipe(debug({title: 'imgbuild:'}))
+        .pipe(gulp.dest('./WebComponents/buildlocal/SBFrameWork/SandboxFrameworkPart/images'))
+        .pipe(gulp.dest('./WebComponents/buildSP/images'));
 });
 
 gulp.task('packagesp', function () {
