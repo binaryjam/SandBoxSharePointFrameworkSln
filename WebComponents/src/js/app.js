@@ -8,8 +8,3 @@
     document.addEventListener("DOMContentLoaded", init);
 
 })();
-(function(){
-
-    //I dont do anything yet
-
-})();

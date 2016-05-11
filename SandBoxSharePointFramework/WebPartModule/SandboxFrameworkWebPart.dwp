@@ -26,7 +26,15 @@
   <IsIncludedFilter />
   <Assembly>Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
   <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
-  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">/sites/mainsite/SBFrameWork/SandboxFrameworkPart/loader.htm</ContentLink>
-  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"></Content>
+  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"></ContentLink>
+  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+    <![CDATA[
+    <p>I really don't like MDS at the minute so turn it off till I get round to loving it</p>
+      <p>    Change this to have a content link insted of this text. </p> 
+      <p>    Point it at &quot;
+      <script>document.write(_spPageContextInfo.siteAbsoluteUrl);</script>
+      </span>/SBFrameWork/SandboxFrameworkPart/loader.htm&quot;</p>
+    ]]>
+  </Content>
   <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
 </WebPart>

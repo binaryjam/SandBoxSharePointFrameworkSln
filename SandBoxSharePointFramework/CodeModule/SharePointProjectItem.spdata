@@ -4,6 +4,6 @@
     <ProjectItemFile Source="Elements.xml" Target="CodeModule\" Type="ElementManifest" />
     <ProjectItemFile Source="loader.htm" Target="CodeModule\" Type="ElementFile" />
     <ProjectItemFile Source="bundle.js" Target="CodeModule\" Type="ElementFile" />
-    <ProjectItemFile Source="styles.css" Target="CodeModule\" Type="ElementFile" />
+    <ProjectItemFile Source="bundle.css" Target="CodeModule\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -3,6 +3,6 @@
   <PropertyGroup>
     <SharePointSiteUrl>http://desktop-720g4if/</SharePointSiteUrl>
     <ProjectView>ShowAllFiles</ProjectView>
-    <PublishToFileSystemTargetLocation>c:\dev\SandBoxSharePointFrameworkSln\SandBoxSharePointFramework\</PublishToFileSystemTargetLocation>
+    <PublishToFileSystemTargetLocation>C:\Dev\SandBoxSharePointFrameworkSln\SandBoxSharePointFramework\</PublishToFileSystemTargetLocation>
   </PropertyGroup>
 </Project>

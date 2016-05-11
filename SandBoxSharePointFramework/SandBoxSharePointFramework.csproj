@@ -65,8 +65,8 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CodeModule\bundle.css" />
     <Content Include="CodeModule\Elements.xml" />
-    <Content Include="CodeModule\styles.css" />
     <Content Include="CodeModule\bundle.js" />
     <Content Include="CodeModule\loader.htm" />
     <Content Include="Features\SandboxFrameworkPart\SandboxFrameworkPart.Template.xml">

@@ -3,6 +3,6 @@
   <Module Name="CodeModule">
     <File ReplaceContent="TRUE" Path="CodeModule\loader.htm" Url="SBFrameWork/SandboxFrameworkPart/loader.htm" />
     <File ReplaceContent="TRUE" Path="CodeModule\bundle.js" Url="SBFrameWork/SandboxFrameworkPart/bundle.js" />
-    <File ReplaceContent="TRUE" Path="CodeModule\styles.css" Url="SBFrameWork/SandboxFrameworkPart/styles.css" />
+    <File ReplaceContent="TRUE" Path="CodeModule\bundle.css" Url="SBFrameWork/SandboxFrameworkPart/bundle.css" />
   </Module>
 </Elements>
