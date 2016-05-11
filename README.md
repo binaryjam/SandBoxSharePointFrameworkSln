@@ -44,11 +44,44 @@ Once done we have some dependancies, open up a node command prompt (better still
 Install gulp globally
   npm install -g gulp
 
+Install VS Code
+  https://code.visualstudio.com/Download
+  
 Install Git, even if you don't use it yourself you are likely to need it, you can skip this if you want,
 and may have to configure its proxy settings also.
 
+everything after this needs more work, wel it all does but below is really really draft
+-----  
+fork and clone this project or just plain download it to a folder.
 
-  
-  
+open a CMD prompt
+cd into the root of the folder where the package.json file is.
+run 
+  npm install
+That will get all the dependancies and install them locally.
+run 
+   npm run dev
+This will launch the lite-server and watch the build files
+run
+    code .
+
+Lauch VS code.
+
+edit the webpart.html and the files in the src/js folder
+hit CTRL-B  this will build local,sp and packagesp files 
+
+To make a WSP load the Sln file in VS2015 - You need the office Dev SDK as well as 2015.
+Right Mouse on the project and Publish it,  pick a deployment folder for your WSP.
+
+This is the process so far,  it needs work, but I've banged this out in half a day really.
+More to do, the images and xml edit first,  then at this point the project splits into module loader diffs and figuring out a 
+better publish method without loading VS2015, better still just using makecab, but it's been a while since i ddf built anything.
+
+Also anyone want to help ?
+
+
+
+
+
   
   
