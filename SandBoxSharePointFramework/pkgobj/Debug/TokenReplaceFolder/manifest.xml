@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="8ea52da5-1b0e-4b5b-bcb7-799e8e3c7593" SharePointProductVersion="15.0">
   <FeatureManifests>
-    <FeatureManifest Location="SandBoxSharePointFramework_Feature1\Feature.xml" />
+    <FeatureManifest Location="SandBoxSharePointFramework_SandboxFrameworkPart\Feature.xml" />
   </FeatureManifests>
 </Solution>

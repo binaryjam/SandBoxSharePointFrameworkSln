@@ -46,7 +46,7 @@
     <None Include="CodeModule\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{43f8dd06-a0bb-46c8-b433-f3813a03b9d5}</SharePointProjectItemId>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\SandboxFrameworkPart\SandboxFrameworkPart.feature">
       <FeatureId>{1e7f11bb-1969-44e9-81a1-1c8ba677b3c0}</FeatureId>
     </None>
     <None Include="Package\Package.package">
@@ -54,7 +54,9 @@
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
+    <None Include="WebPartModule\SandboxFrameworkWebPart.dwp" />
     <None Include="WebPartModule\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{21ca725b-052e-4023-a6a9-3d011b4a29e0}</SharePointProjectItemId>
     </None>
@@ -64,12 +66,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CodeModule\Elements.xml" />
-    <Content Include="CodeModule\Sample.txt" />
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="CodeModule\styles.css" />
+    <Content Include="CodeModule\bundle.js" />
+    <Content Include="CodeModule\loader.htm" />
+    <Content Include="Features\SandboxFrameworkPart\SandboxFrameworkPart.Template.xml">
+      <DependentUpon>SandboxFrameworkPart.feature</DependentUpon>
     </Content>
     <Content Include="WebPartModule\Elements.xml" />
-    <Content Include="WebPartModule\Sample.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

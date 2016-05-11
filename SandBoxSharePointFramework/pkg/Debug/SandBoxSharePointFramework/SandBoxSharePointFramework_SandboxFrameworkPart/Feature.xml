@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SandboxFrameworkPart" Id="5a3295dd-b32e-4d07-bde4-1acc1f98fb9d" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="WebPartModule\Elements.xml" />
+    <ElementFile Location="WebPartModule\SandboxFrameworkWebPart.dwp" />
+    <ElementManifest Location="CodeModule\Elements.xml" />
+    <ElementFile Location="CodeModule\loader.htm" />
+  </ElementManifests>
+</Feature>
