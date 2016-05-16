@@ -23,7 +23,7 @@ gulp.task('buildhtmllocal', function () {
                      './WebComponents/.container/loader.htm', 
                      './WebComponents/src/webpartcontent.htm',
                      './WebComponents/.container/localbottom.htm'])
-        .pipe(concat('loader.htm'))
+        .pipe(concat('index.html'))
         .pipe(gulp.dest('./WebComponents/buildlocal'));
 });
 
