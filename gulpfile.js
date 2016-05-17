@@ -72,9 +72,9 @@ gulp.task('buildimgboth', function () {
 
 var elementFiles = [];
 
-gulp.task('packagesp', ['packagesp1','packagesp2', 'packagesp3','prettify']);
+gulp.task('packagesp', ['packagesp1','packagesp2', 'packagesp3','prettify1','packagespdata']);
 
-gulp.task('prettify', ['packagesp1'],function() {
+gulp.task('prettify1', ['packagesp1'],function() {
   return gulp.src("./SandBoxSharePointFramework/CodeModule/Elements.xml")
     .pipe(prettyData({type: 'prettify'}))
     .pipe(gulp.dest("./SandBoxSharePointFramework/CodeModule/", { "overwrite": true }));
@@ -94,6 +94,36 @@ gulp.task('packagesp1',  ['packagesp2', 'packagesp3'], function () {
                                         .attr({ ReplaceContent: 'TRUE' })
                                         .attr({ Path: elementFiles[j].path })
                                         .attr({ Url: elementFiles[j].Url });
+                        }
+
+
+                        return xml;
+                }))
+                .pipe(gulp.dest("./SandBoxSharePointFramework/CodeModule/", { "overwrite": true }));
+});
+
+gulp.task('packagespdata',  ['packagesp2', 'packagesp3'], function () {
+        //Clear out all the File objects in the XML
+     return   gulp.src("./SandBoxSharePointFramework/CodeModule/SharePointProjectItem.spdata")
+                .pipe(xeditor(function (xml, xmljs) {
+                        var node = xml.find('//xmlns:ProjectItemFile', "http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel");
+                        for (var i = 0; i < node.length; i++) {
+                                node[i].remove();
+                        }
+                        var module = xml.get('//xmlns:Files', 'http://schemas.microsoft.com/sharepoint/');
+                        for (var j = 0; j < elementFiles.length; j++) {
+                                if (elementFiles[j].name==="Elements.xml"){
+                                        module.node('ProjectItemFile')
+                                                .attr({ "Source": elementFiles[j].name })
+                                                .attr({ "Target": "CodeModule\\" })
+                                                .attr({ "Type":"ElementManifest" });
+                                }
+                                else{
+                                        module.node('ProjectItemFile')
+                                                .attr({ "Source": elementFiles[j].name })
+                                                .attr({ "Target": "CodeModule\\" })
+                                                .attr({ "Type":"ElementFile" });                                        
+                                }
                         }
 
 
