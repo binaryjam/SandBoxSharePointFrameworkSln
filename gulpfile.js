@@ -89,11 +89,11 @@ gulp.task('packagesp1',  ['packagesp2', 'packagesp3'], function () {
                                 node[i].remove();
                         }
                         var module = xml.get('//xmlns:Module', 'http://schemas.microsoft.com/sharepoint/');
-                        for (var i = 0; i < elementFiles.length; i++) {
+                        for (var j = 0; j < elementFiles.length; j++) {
                                 module.node('File')
                                         .attr({ ReplaceContent: 'TRUE' })
-                                        .attr({ Path: elementFiles[i].path })
-                                        .attr({ Url: elementFiles[i].Url });
+                                        .attr({ Path: elementFiles[j].path })
+                                        .attr({ Url: elementFiles[j].Url });
                         }
 
 
