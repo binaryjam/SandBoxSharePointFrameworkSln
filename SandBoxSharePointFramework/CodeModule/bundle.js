@@ -2,7 +2,7 @@
 
     function init() {
         var x = document.getElementById('sandboxframeworkpart');
-        x.innerHTML = "Hello World";
+        x.innerHTML = "Hello World!";
         
         sbfrmcomponent.createImage();
     }
