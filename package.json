@@ -21,7 +21,10 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-debug": "^2.1.2",
+    "gulp-fn": "0.0.0",
+    "gulp-pretty-data": "^0.1.1",
     "gulp-uglyfly": "^1.4.2",
+    "gulp-xml-editor": "^2.2.1",
     "lite-server": "^2.2.0"
   }
 }

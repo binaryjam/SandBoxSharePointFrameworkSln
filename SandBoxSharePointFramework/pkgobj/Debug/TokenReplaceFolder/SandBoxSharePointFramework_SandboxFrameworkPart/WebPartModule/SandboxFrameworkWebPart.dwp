@@ -29,6 +29,7 @@
   <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"></ContentLink>
   <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
     <![CDATA[
+    <p>I really don't like MDS at the minute so turn it off till I get round to loving it</p>
       <p>    Change this to have a content link insted of this text. </p> 
       <p>    Point it at &quot;
       <script>document.write(_spPageContextInfo.siteAbsoluteUrl);</script>
