@@ -26,7 +26,7 @@
         "**/buildSP":true,
         "**/bs-config.json":true,
         "**/jsconfig.json":true,
-       // "**/buildlocal":true
+        "**/buildlocal":true
         
     }
 }

@@ -49,13 +49,6 @@
     <None Include="Features\SandboxFrameworkPart\SandboxFrameworkPart.feature">
       <FeatureId>{1e7f11bb-1969-44e9-81a1-1c8ba677b3c0}</FeatureId>
     </None>
-    <None Include="Package\Package.package">
-      <PackageId>{8ea52da5-1b0e-4b5b-bcb7-799e8e3c7593}</PackageId>
-    </None>
-    <None Include="Package\Package.Template.xml">
-      <DependentUpon>Package.package</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="WebPartModule\SandboxFrameworkWebPart.dwp" />
     <None Include="WebPartModule\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{21ca725b-052e-4023-a6a9-3d011b4a29e0}</SharePointProjectItemId>
@@ -68,6 +61,8 @@
     <Content Include="CodeModule\bundle.css" />
     <Content Include="CodeModule\Elements.xml" />
     <Content Include="CodeModule\bundle.js" />
+    <Content Include="CodeModule\images\asteroids.jpg" />
+    <Content Include="CodeModule\images\galaxy.jpg" />
     <Content Include="CodeModule\loader.htm" />
     <Content Include="Features\SandboxFrameworkPart\SandboxFrameworkPart.Template.xml">
       <DependentUpon>SandboxFrameworkPart.feature</DependentUpon>
