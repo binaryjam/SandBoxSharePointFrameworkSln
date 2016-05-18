@@ -4,7 +4,6 @@
         "./WebComponents/buildlocal/**/*.*"
     ],
     "server": {
-        "baseDir": "./WebComponents/buildlocal",
-        "index": "loader.htm"
+        "baseDir": "./WebComponents/buildlocal"
     }
 }

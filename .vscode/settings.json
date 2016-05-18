@@ -21,6 +21,12 @@
         "**/*.csproj":true,
         "**/*.wsp":true,
         "**/*.sln":true,
-        "**/.vs":true
+        "**/.vs":true,
+        "**/.container":true,
+        "**/buildSP":true,
+        "**/bs-config.json":true,
+        "**/jsconfig.json":true,
+       // "**/buildlocal":true
+        
     }
 }

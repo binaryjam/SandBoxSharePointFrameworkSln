@@ -7,19 +7,24 @@ var prettyData = require('gulp-pretty-data');
 var clean = require('gulp-clean');
 var destination = "";
 
-
-gulp.task('build', ['cleanlocal', 'cleansp', 'buildhtmllocal', 'buildcssboth', 'buildjsboth', 'buildimgboth', 'buildhtmlsp', 'packagesp']);
+//Lol, gulp works our the dependancy tree and executes everything you need
+gulp.task('build', ['packagesp']);
 
 
 gulp.task('cleanlocal', function () {
-        return gulp.src('./WebComponents/buildlocal/', { read: false })
-                .pipe(clean());
-});
-gulp.task('cleansp', function () {
-        return gulp.src('./WebComponents/buildSP/', { read: false })
+        return gulp.src('./WebComponents/buildlocal/**', { read: false })
                 .pipe(clean());
 });
 
+gulp.task('cleansp',['cleansp1','cleansp2']);
+gulp.task('cleansp1', function () {
+        return gulp.src('./WebComponents/buildSP/**', { read: false })
+                .pipe(clean());
+});
+gulp.task('cleansp2',['cleansp1'], function () {
+        return gulp.src('./SandBoxSharePointFramework/CodeModule/**/*.{jpg,png,css,js,htm,html}', { read: false })
+                .pipe(clean());
+});
 
 gulp.task('buildhtmllocal', ['cleanlocal'], function () {
         return gulp.src(['./WebComponents/.container/localtop.htm',
