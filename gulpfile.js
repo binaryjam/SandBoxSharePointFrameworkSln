@@ -22,22 +22,12 @@ gulp.task('buildSP', [
 
 
 gulp.task('buildhtmllocal', function () {
-<<<<<<< HEAD
      gulp.src(['./WebComponents/.container/localtop.htm',
                      './WebComponents/.container/loader.htm', 
                      './WebComponents/src/webpartcontent.htm',
                      './WebComponents/.container/localbottom.htm'])
         .pipe(concat('index.html'))
         .pipe(gulp.dest('./WebComponents/buildlocal'));
-=======
-        gulp.src(['./WebComponents/.container/localtop.htm',
-                './WebComponents/.container/loader.htm',
-                './WebComponents/src/webpartcontent.htm',
-                './WebComponents/.container/localbottom.htm'
-        ])
-                .pipe(concat('loader.htm'))
-                .pipe(gulp.dest('./WebComponents/buildlocal'));
->>>>>>> origin/master
 });
 
 gulp.task('buildhtmlsp', function () {
