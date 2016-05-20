@@ -5,7 +5,9 @@
 node_modules
 /WebComponents/buildlocal
 /WebComponents/buildSP
-/SandBoxSharePointFramework-old
-/SandBoxSharePointFramework/*.wsp
 /**/*.wsp
 /**/.suo
+/SandBoxSharePointFramework/pkg
+/SandBoxSharePointFramework/pkgobj
+/SandBoxSharePointFramework/bin
+/SandBoxSharePointFramework/obj

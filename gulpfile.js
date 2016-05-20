@@ -6,6 +6,7 @@ var xeditor = require("gulp-xml-editor");
 var prettyData = require('gulp-pretty-data');
 var clean = require('gulp-clean');
 var rename = require("gulp-rename");
+var msbuild = require("gulp-msbuild");
 var destination = "";
 
 if (!String.prototype.startsWith) {
@@ -17,6 +18,8 @@ if (!String.prototype.startsWith) {
 
 //Lol, gulp works our the dependancy tree and executes everything you need
 gulp.task('build', ['packagesp']);
+gulp.task('packagewsp', ['msbuild']);
+
 
 gulp.task('default', ['packagesp']);
 
@@ -83,7 +86,7 @@ gulp.task('buildhtmlsp', ['cleansp'], function () {
 
 var elementFiles = [];
 
-gulp.task('packagesp', ['prettify1','prettify2', 'prettify3']);
+gulp.task('packagesp', ['prettify1', 'prettify2', 'prettify3']);
 
 gulp.task('packageXmlFiles', ['buildhtmlsp', 'buildjsboth', 'buildcssboth'], function () {
 
@@ -241,8 +244,8 @@ gulp.task('packagecsproj', ['packageElements', 'packagespdata'], function () {
                             "Include": newItems[k].path + newItems[k].name
                         });
                 }
-                
-                                //Changes to the XML have to be done after iterations else it goes bang.
+
+                //Changes to the XML have to be done after iterations else it goes bang.
                 for (var k = 0; k < removeNodes.length; k++) {
                     removeNodes[k].remove();
                 }
@@ -276,6 +279,8 @@ gulp.task('prettify2', ['packagespdata'], function () {
         }));
 });
 
+//If we get problems with unidentified package items then delete the .suo files in a new task item
+
 gulp.task('prettify3', ['packagecsproj'], function () {
     return gulp.src("./SandBoxSharePointFramework/SandBoxSharePointFramework.csproj")
         .pipe(rename("SandBoxSharePointFramework.csproj.xml"))
@@ -287,5 +292,18 @@ gulp.task('prettify3', ['packagecsproj'], function () {
             "overwrite": true
         }));
 });
+
+
+gulp.task('msbuild', ['packagesp'], function () {
+    return gulp.src("./SandBoxSharePointFramework/SandBoxSharePointFramework.csproj")
+        .pipe(msbuild({
+            targets: ['Package'],
+            toolsVersion: 12.0,
+            properties: { 
+                OutputPath:"./bin/package"}
+        }));
+
+});
+
 
 //    <File ReplaceContent="TRUE" Path="CodeModule\bundle.css" Url="SBFrameWork/SandboxFrameworkPart/bundle.css"/>
