@@ -17,8 +17,8 @@ if (!String.prototype.startsWith) {
 }
 
 //Lol, gulp works our the dependancy tree and executes everything you need
-gulp.task('build', ['packagesp']);
-gulp.task('packagewsp', ['msbuild']);
+gulp.task('.BUILD', ['packagesp']);
+gulp.task('.BUILDWSP', ['msbuild']);
 
 
 gulp.task('default', ['packagesp']);

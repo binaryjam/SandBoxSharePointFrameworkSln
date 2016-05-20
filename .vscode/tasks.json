@@ -10,7 +10,7 @@
     "showOutput": "always",
     "tasks": [
         {
-            "taskName": "build",
+            "taskName": ".BUILD",
             "isBuildCommand": true
         }
     ]
