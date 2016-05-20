@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Elements 
-  xmlns="http://schemas.microsoft.com/sharepoint/">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="CodeModule">
-    <File ReplaceContent="TRUE" Path="CodeModule\bundle.css" Url="SBFrameWork/SandboxFrameworkPart/bundle.css"/>
-    <File ReplaceContent="TRUE" Path="CodeModule\bundle.js" Url="SBFrameWork/SandboxFrameworkPart/bundle.js"/>
-    <File ReplaceContent="TRUE" Path="CodeModule\loader.htm" Url="SBFrameWork/SandboxFrameworkPart/loader.htm"/>
-    <File Path="CodeModule\bundle.css\bundle.css" Url="CodeModule/bundle.css/bundle.css" />
-    <File Path="CodeModule\bundle.js\bundle.js" Url="CodeModule/bundle.js/bundle.js" />
-    <File Path="CodeModule\loader.htm\loader.htm" Url="CodeModule/loader.htm/loader.htm" />
     <File Path="CodeModule\images\asteroids.jpg" Url="CodeModule/images/asteroids.jpg" />
     <File Path="CodeModule\images\galaxy.jpg" Url="CodeModule/images/galaxy.jpg" />
+    <File Path="CodeModule\images\meteors.jpg" Url="CodeModule/images/meteors.jpg" />
+    <File Path="CodeModule\bundle.css" Url="CodeModule/bundle.css" />
+    <File Path="CodeModule\bundle.js" Url="CodeModule/bundle.js" />
+    <File Path="CodeModule\loader.htm" Url="CodeModule/loader.htm" />
   </Module>
 </Elements>

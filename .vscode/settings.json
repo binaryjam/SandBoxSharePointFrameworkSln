@@ -18,7 +18,7 @@
         "**/Properties":true,
         "**/WebPartModule":true,
         "**/*.csproj.*":true,
-        "**/*.csproj":true,
+       // "**/*.csproj":true,
         "**/*.wsp":true,
         "**/*.sln":true,
         "**/.vs":true,
