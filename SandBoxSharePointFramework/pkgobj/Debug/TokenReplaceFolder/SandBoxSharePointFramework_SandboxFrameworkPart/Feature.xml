@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SandboxFrameworkPart" Id="f3dffdb9-ed23-4039-b3fb-1cf76f3bcb24" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="CodeModule\Elements.xml" />
+    <ElementFile Location="CodeModule\bundle.css" />
+    <ElementFile Location="CodeModule\images\asteroids.jpg" />
+    <ElementFile Location="CodeModule\bundle.js" />
+    <ElementFile Location="CodeModule\images\galaxy.jpg" />
+    <ElementFile Location="CodeModule\loader.htm" />
+    <ElementManifest Location="WebPartModule\Elements.xml" />
+    <ElementFile Location="WebPartModule\SandboxFrameworkWebPart.dwp" />
+  </ElementManifests>
+</Feature>
