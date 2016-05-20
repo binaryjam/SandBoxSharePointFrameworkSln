@@ -8,25 +8,24 @@
         "**/.DS_Store": true,
         "node_modules":true,
         //Hide parts of the VS project till the automatic bits can build xml and wsp
-        //on their own
-        "**/bin":true,
-        "**/Features":true,
-        "**/obj":true,
-        "**/Package":true,
-        "**/pkg":true,
-        "**/pkgobj":true,
-        "**/Properties":true,
-        "**/WebPartModule":true,
-        "**/*.csproj.*":true,
-        "**/*.csproj":true,
-        "**/*.wsp":true,
-        "**/*.sln":true,
-        "**/.vs":true,
-        "**/.container":true,
-        "**/buildSP":true,
-        "**/bs-config.json":true,
-        "**/jsconfig.json":true,
-        "**/buildlocal":true
-        
+        //on their own/*
+  //      "**/bin":true,
+ //       "**/Features":true,
+ //       "**/obj":true,
+ //       "**/Package":true,
+ //       "**/pkg":true,
+  //      "**/pkgobj":true,
+  //      "**/Properties":true,
+ //       "**/WebPartModule":true,
+        "**/*.csproj.*":true
+       // "**/*.csproj":true,
+ //       "**/*.wsp":true,
+//        "**/*.sln":true,
+//        "**/.vs":true,
+////        "**/.container":true,
+//        "**/buildSP":true,
+//        "**/bs-config.json":true,
+ //       "**/jsconfig.json":true,
+ //       "**/buildlocal":true
     }
 }

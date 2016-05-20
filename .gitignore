@@ -2,7 +2,9 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 /SandBoxSharePointFramework/obj/Debug
-/SandBoxSharePointFramework/Package
 node_modules
 /WebComponents/buildlocal
 /WebComponents/buildSP
+/SandBoxSharePointFramework-old
+/SandBoxSharePointFramework/*.wsp
+/**/*.wsp
