@@ -8,3 +8,4 @@ node_modules
 /SandBoxSharePointFramework-old
 /SandBoxSharePointFramework/*.wsp
 /**/*.wsp
+/**/.suo
